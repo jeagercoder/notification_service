@@ -1,0 +1,37 @@
+
+
+#   Mysql config
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': '',
+        'PORT': 3306,
+        'USER': '',
+        'PASSWORD': '',
+        'NAME': ''
+    }
+}
+
+
+#   Redis for celery
+CELERY_BROKER_URL = ''
+CELERY_RESULT_BACKEND = ''
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+
+
+#   Email credential(gmail)
+GENERIC_EMAIL_HOST_USER = ''
+GENERIC_EMAIL_HOST_PASSWORD = ''
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+
+
+#   Auth Internal Service
+INTERNAL_AUTH_PREFIX = ''
+INTERNAL_AUTH_VALUE = ''
